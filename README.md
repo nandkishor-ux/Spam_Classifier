@@ -113,7 +113,6 @@ jupyter notebook spam_classifier.ipynb
 **Step 3** — Run all cells from top to bottom
 
 ---
-
 ## Results
 
 ```
@@ -125,7 +124,6 @@ macro avg        0.97       0.97       0.97       1115
 ```
 
 ---
-
 ## Key Learnings
 
 - **Data leakage** is the most common mistake — always fit the vectorizer on training data only, never on the full dataset
@@ -134,7 +132,6 @@ macro avg        0.97       0.97       0.97       1115
 - **Lemmatization reduces sparsity** — fewer unique tokens means a cleaner feature space
 
 ---
-
 ## What Can Be Improved
 
 - Add bigrams using `ngram_range=(1,2)` for phrase-level signals like "free entry" and "click here"
@@ -143,7 +140,6 @@ macro avg        0.97       0.97       0.97       1115
 - Add POS-aware lemmatization for better verb handling
 
 ---
-
 ## Author
 
 Built as part of NLP learning journey covering tokenization, lemmatization, Bag of Words, TF-IDF and text classification.
