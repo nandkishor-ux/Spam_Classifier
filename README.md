@@ -1,15 +1,10 @@
 # Spam Classifier — NLP Project
 
 A machine learning project that classifies SMS messages as spam or ham using text preprocessing and Logistic Regression.
-
 ---
-
 ## Overview
-
 This project was built as part of learning Natural Language Processing. It covers the full pipeline from raw text to a trained classifier — including tokenization, lemmatization, TF-IDF feature extraction, and model evaluation.
-
 ---
-
 ## Dataset
 
 - **File:** `spam.csv`
@@ -81,7 +76,6 @@ Install all at once:
 ```
 pip install pandas numpy scikit-learn nltk matplotlib seaborn
 ```
-
 ---
 
 ## NLTK Downloads
@@ -104,14 +98,11 @@ nltk.download('averaged_perceptron_tagger')
 ```
 pip install -r requirements.txt
 ```
-
 **Step 2** — Open the notebook
 ```
 jupyter notebook spam_classifier.ipynb
 ```
-
 **Step 3** — Run all cells from top to bottom
-
 ---
 ## Results
 
@@ -122,7 +113,6 @@ spam             0.95       0.96       0.96        149
 accuracy                               0.98       1115
 macro avg        0.97       0.97       0.97       1115
 ```
-
 ---
 ## Key Learnings
 
@@ -130,7 +120,6 @@ macro avg        0.97       0.97       0.97       1115
 - **Accuracy is misleading** on imbalanced data — F1 score is the right metric here since spam is only 13% of the data
 - **TF-IDF beats raw word counts** — down-weighting common words improves classification noticeably
 - **Lemmatization reduces sparsity** — fewer unique tokens means a cleaner feature space
-
 ---
 ## What Can Be Improved
 
@@ -138,7 +127,6 @@ macro avg        0.97       0.97       0.97       1115
 - Try LinearSVC which often outperforms Logistic Regression on text
 - Use cross-validation for more reliable evaluation
 - Add POS-aware lemmatization for better verb handling
-
 ---
 ## Author
 
